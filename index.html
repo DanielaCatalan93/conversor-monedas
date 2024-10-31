@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--CSS-->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!--Título de la página-->
+    <title>Conversor de Monedas</title>
+  </head>
+  <body>
+    <!--El header contiene un h1 con el título de la pagina-->
+    <header>
+      <div class="border"></div>
+      <h1>Conversor de monedas Nacional</h1>
+      <div class="border"></div>
+    </header>
+    <!--El main contiene la estructura de la pagina: h4, input, p, select, button-->
+    <main>
+      <div class="container">
+        <h3>Pesos CLP</h3>
+        <input
+          type="text"
+          id="inputConversor"
+          placeholder="Ingrese el monto en CLP"
+        />
+        <p>Moneda a convertir</p>
+        <select name="select" id="monedaSeleccionada">
+          <option value="">Seleccione moneda</option>
+          <option value="uf">UF</option>
+          <option value="ivp">IVP</option>
+          <option value="dolar">Dólar</option>
+          <option value="dolar_intercambio">Dólar Intercambio</option>
+          <option value="euro">Euro</option>
+          <option value="ipc">IPC</option>
+          <option value="utm">UTM</option>
+          <option value="imacec">Imacec</option>
+          <option value="tpm">TPM</option>
+          <option value="libra_cobre">Libra Cobre</option>
+          <option value="bitcoin">Bitcoin</option>
+        </select>
+        <button id="buscar-btn">Buscar</button>
+        <p id="resultado">...</p>
+      </div>
+      <canvas id="myLineChart" width="400" height="200"></canvas>
+    </main>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

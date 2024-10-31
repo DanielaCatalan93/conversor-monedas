@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  background-color: #03061b;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 2%;
+  width: 200px;
+  height: 200px;
+  padding: 3rem;
+  margin: auto;
+  background-color: grey;
+  gap: 10px;
+}
+
+button {
+  background-color: #32c2b9;
+  color: white;
+  padding: 8px 80px;
+  margin: 10px;
+  border: none;
+  border-radius: 2px;
+}
+
+input {
+  padding: 8px 15px;
+  border-radius: 2px;
+  border: none;
+  text-align: center;
+}
+
+select {
+  padding: 8px 30px;
+  border-radius: 3px;
+}
+
+.border {
+  border: 1px solid cadetblue;
+  width: 500px;
+  margin: 0.5rem 27rem;
+}
+
+#resultado {
+  padding-bottom: 3rem;
+}
+
+h3 {
+  padding-top: 2rem;
+}
+
+#myLineChart {
+  max-width: 400px; /* Limitar el ancho máximo */
+  max-height: 200px; /* Limitar la altura máxima */
+  width: 100%; /* Asegura que el canvas se ajuste al contenedor */
+  height: auto; /* Mantiene la proporción */
+  margin-left: 30rem;
+}
